@@ -1,12 +1,13 @@
 import { Model } from 'mongoose';
-import { Inject, Injectable, NotFoundException } from '@nestjs/common';
+import { Injectable, NotFoundException } from '@nestjs/common';
 import { TodoInterface } from './todo.interface';
 import { CreateTodoDto } from './create-todo.dto';
+import { InjectModel } from '@nestjs/mongoose';
 
 @Injectable()
 export class TodoService {
   constructor(
-    @Inject('TODO_MODEL') private readonly todoModel: Model<TodoInterface>,
+    @InjectModel('Todo') private readonly todoModel: Model<TodoInterface>,
   ) {}
 
   async getAllFromDb(): Promise<TodoInterface[]> {
