@@ -6,6 +6,7 @@ import { PassportStrategy } from '@nestjs/passport';
 @Injectable()
 export class JwtStrategy extends PassportStrategy(Strategy) {
   constructor() {
+    // Save all secrets in env files
     super({
       secretOrKeyProvider: passportJwtSecret({
         cache: true,
@@ -15,7 +16,7 @@ export class JwtStrategy extends PassportStrategy(Strategy) {
       }),
 
       jwtFromRequest: ExtractJwt.fromAuthHeaderAsBearerToken(),
-      audience: 'http://localhost:3000',
+      audience: 'http://localhost:3000', // Dev only. Needs to change this when deploying
       issuer: 'https://devlin.auth0.com/',
       algorithms: ['RS256'],
     });

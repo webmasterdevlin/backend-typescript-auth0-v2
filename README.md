@@ -1,3 +1,31 @@
+## Web API of the Full-Stack TypeScript demo with Authentication and Authorization
+
+
+## How to run
+
+```bash
+# clone
+$ git clone https://github.com/webmasterdevlin/backend-typescript-auth0-v2.git
+
+$ cd backend-typescript-auth0-v2
+
+# open using vs code
+$ code .
+
+# watch mode
+$ npm run start:dev
+```
+## Data base
+[MongoDB]('https://www.mongodb.com/') with the help of [Mongoose]('https://mongoosejs.com/'), [Mlab]('https://mlab.com/'), and [MongoDB Atlas]('https://www.mongodb.com/cloud/atlas')
+
+## Authorization
+[Auth0]('https://auth0.com/')
+
+## Deployment
+[Zeit]('https://trilon.io/blog/deploying-nestjs-to-zeit-now')
+
+---
+
 <p align="center">
   <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo_text.svg" width="320" alt="Nest Logo" /></a>
 </p>
@@ -6,7 +34,7 @@
 [travis-url]: https://travis-ci.org/nestjs/nest
 [linux-image]: https://img.shields.io/travis/nestjs/nest/master.svg?label=linux
 [linux-url]: https://travis-ci.org/nestjs/nest
-  
+
   <p align="center">A progressive <a href="http://nodejs.org" target="blank">Node.js</a> framework for building efficient and scalable server-side applications, heavily inspired by <a href="https://angular.io" target="blank">Angular</a>.</p>
     <p align="center">
 <a href="https://www.npmjs.com/~nestjscore"><img src="https://img.shields.io/npm/v/@nestjs/core.svg" alt="NPM Version" /></a>
